@@ -1,0 +1,39 @@
+<body style="margin: 30px">
+    <h1 style="color:green">Exercise3 Write a JavaScript program to calculate multiplication and division of two num-bers (input from the user).</h1>
+    <h3>Multiplication using Javascript</h3>
+    <form>
+        1st Number : <input type="text" id="firstNumber" /><br>
+        2nd Number: <input type="text" id="secondNumber" /><br>
+        <input type="button" onClick="multiplyBy()" Value="Multiply" /><br>
+        <input type="button" onclick="divideBy()"Value="Divion"/><br>
+    </form>
+ 
+    <p>The Result is : <br>
+        <span id="result"></span>
+    </p>
+ 
+ 
+    <script>
+        function multiplyBy()
+        {
+          num1 = document.getElementById(
+            "firstNumber").value;
+          num2 = document.getElementById(
+            "secondNumber").value;
+          document.getElementById(
+            "result").innerHTML = num1 * num2;
+        }
+        function divideBy()
+        {
+            number1=document.getElementById("firstNumber").value;
+            number2=document.getElementById("secondNumber").value;
+            if(number2!=0)
+            {
+            document.getElementById("result").innerHTML=number1/number2;
+            }
+            else
+            document.body.innerHTML="cannot divide by zero"
+            
+        }
+    </script>
+</body>

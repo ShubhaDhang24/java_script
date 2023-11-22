@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Current Date and Time</title>
+</head>
+<body>
+    <script>
+        //function to format current date
+        function formatCurrentDate(){
+            let currentDate=new Date()
+
+            //get components ofdate
+            let month=currentDate.getMonth()+1;
+            let day=currentDate.getDay()
+            let year=currentDate.getFullYear()
+
+            //formatted string mm-dd-yyyy,mm/dd/yyyy
+            let mmddyyyy= month+"-"+day+"-"+year
+            let slashDate=month+"/"+day+"/"+year
+
+            //display the result on webPage
+            document.body.innerHTML="<h2 > mmddyyyy :"+mmddyyyy+"</h2>"
+            document.body.innerHTML="<h2> mm/dd/yyy :"+slashDate+"</h2>"
+            
+        }
+        formatCurrentDate();
+
+    </script>
+</body>
+</html>

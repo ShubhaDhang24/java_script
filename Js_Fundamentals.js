@@ -75,3 +75,36 @@ function greet(name)
     console.log("hello "+name)
 }
 greet("shubha")
+//function
+const _greet=(name)=>console.log("hello "+name);
+
+_greet("shubha")
+
+const addition=(n1,n2)=>n1+n2
+console.log(addition(10,2))
+
+
+//arrays
+let num=[1,2,3,4,5]
+console.log(num[2])
+console.log(num)
+num.push(7)
+
+num.pop(2)
+let evennum= num.filter(num=>num%2==0);
+let ar=[5,2,4,1,5,7]
+console.log(ar.sort())
+
+//objects
+let person1={
+    name: "shubha",
+    age:31,
+    isStudent:true,
+ adress:{
+    city:"jönköping",
+    country:"sweden"
+}
+}
+info:()=>console.log(this.name,this.adress.city)
+
+console.log(person1.age)
