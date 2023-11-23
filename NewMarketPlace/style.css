@@ -1,0 +1,49 @@
+
+.container{
+    background-color:rgb(213, 238, 144);
+}
+.card{
+    
+    border: 10px;
+    border-radius: 10px;
+    border-color: black;
+    background-color: antiquewhite;
+    }
+.card-img-top{
+    box-sizing: border-box;
+    border-radius: 5%;
+    border-style: double;
+
+}
+
+.card-footer .btn{
+    font-style: normal;
+    background-color: rgb(92, 19, 65);
+    -webkit-text-fill-color:white;
+    
+}
+.card-title{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: x-large;
+    font-weight: 600;
+}
+.card-text{
+    color: rgb(34, 2, 34);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: larger;
+    
+}
+.card-mb-4 {
+    font-size: medium;
+
+}
+.input{
+    border: 1px solid black;
+    font-size: 18px;
+    padding: 12px 10px;
+    margin: 10px
+}
+img{
+    width:80%
+    height 60%
+}
