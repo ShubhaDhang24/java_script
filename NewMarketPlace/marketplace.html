@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Latest compiled and minified CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Latest compiled JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <title>MarketPlace</title>
+    <style>
+        .container{
+            background-color:lightgreen;
+        }
+        .card{
+            border: 10px;
+            border-radius: 10px;
+            border-color: black;
+            background-color: antiquewhite;
+            }
+        .card-img-top{
+            box-sizing: border-box;
+            border-radius: 10px;
+            border-style: double;
+        }
+       
+        .card-footer .btn{
+            font-style: normal;
+            background-color: rgb(92, 19, 65);
+            -webkit-text-fill-color:white;
+            
+        }
+        .card-title{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: x-large;
+            font-weight: 600;
+        }
+        .card-text{
+            color: darkmagenta;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: larger;
+            
+        }
+        
+    </style>
+</head>
+<body>
+   <div class="container">
+    <div class="mb-4">
+        <h2 class="mb-3 mt-5">Advertisement List</h2>
+        <!--Filter-->
+        <div class ="filterTitle">
+            <label for="filterTitle">filter by title</label>
+            <input type="text" class="form-control"id="filterTitle" placeholder="enter title">
+        </div>
+        <div id="ads"class="row">
+            <!--Advertisements-->
+            <div class="card mb-4 col-md-4">
+                <img class="card-img-top mt-3" src="https://via.placeholder.com/150 " alt="Ad 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Ad 1</h5>
+                        <p class="card-text ">This is first advertisement</p>
+                        <p class="card-text" onclick="alert('contact : contact@test.com')">contact : ***</p>
+                     </div>
+                     <div class="card-footer text-center">
+                        <button class="btn btn-info btn-block"onClick="alert('contact: contact@test.com')">Details</button>
+
+                     </div>
+                </div>
+                <div class="card mb-4 col-md-4">
+                    <img class="card-img-top mt-3" src="https://via.placeholder.com/150 " alt="Ad 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Ad 2</h5>
+                            <p class="card-text ">This is second advertisement</p>
+                            <p class="card-text" onclick="alert('contact : contact@test.com')">contact : ***</p>
+                         </div>
+                         <div class="card-footer text-center">
+                            <button class="btn btn-info btn-block"onClick="alert('contact: contact@test.com')">Details</button>
+    
+                         </div>
+                    </div>
+                    <div class="card mb-4 col-md-4">
+                        <img class="card-img-top mt-3" src="https://via.placeholder.com/150 " alt="Ad 3">
+                            <div class="card-body">
+                                <h5 class="card-title">Ad 3</h5>
+                                <p class="card-text ">This is third advertisement</p>
+                                <p class="card-text" onclick="alert('contact : contact@test.com')">contact : ***</p>
+                             </div>
+                             <div class="card-footer text-center">
+                                <button class="btn btn-info btn-block"onClick="alert('contact: contact@test.com')">Details</button>
+        
+                             </div>
+                        </div>
+                    </div>
+                    <div id="ads"class="row">
+                        <!--Advertisements-->
+                        <div class="card mb-4 col-md-4">
+                            <img class="card-img-top mt-3" src="https://via.placeholder.com/150 " alt="Ad 4">
+                                <div class="card-body">
+                                    <h5 class="card-title">Ad 4</h5>
+                                    <p class="card-text ">This is fourth advertisement</p>
+                                    <p class="card-text" onclick="alert('contact : contact@test.com')">contact : ***</p>
+                                 </div>
+                                 <div class="card-footer text-center">
+                                    <button class="btn btn-info btn-block"onClick="alert('contact: contact@test.com')">Details</button>
+            
+                                 </div>
+                            </div>
+                            <div class="card mb-4 col-md-4">
+                                <img class="card-img-top mt-3" src="https://via.placeholder.com/150 " alt="Ad 5">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Ad 5</h5>
+                                        <p class="card-text ">This is fifth advertisement</p>
+                                        <p class="card-text" onclick="alert('contact : contact@test.com')">contact : ***</p>
+                                     </div>
+                                     <div class="card-footer text-center">
+                                        <button class="btn btn-info btn-block"onClick="alert('contact: contact@test.com')">Details</button>
+                
+                                     </div>
+                                </div>
+                                <div class="card mb-4 col-md-4">
+                                    <img class="card-img-top mt-3" src="https://via.placeholder.com/150 " alt="Ad 6">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Ad 6</h5>
+                                            <p class="card-text ">This is sixth advertisement</p>
+                                            <p class="card-text" onclick="alert('contact : contact@test.com')">contact : ***</p>
+                                         </div>
+                                         <div class="card-footer text-center">
+                                            <button class="btn btn-info btn-block"onClick="alert('contact: contact@test.com')">Details</button>
+                    
+                                         </div>
+                                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+   </div>
+
+                        
+    
+        
+    
+</body>
+</html>

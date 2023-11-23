@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Marketplace</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <style>
+    /* Add your additional styles here if needed */
+    .card {
+      margin: 10px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container mt-4">
+  <!-- Filter input -->
+  <input type="text" id="filterInput" class="form-control mb-3" placeholder="Filter by title">
+
+  <!-- Advertisements container -->
+  <div id="advertisementsContainer" class="row"></div>
+</div>
+
+<script>
+  // Sample data for advertisements
+  const advertisements = [
+    { title: "Service A", description: "Description A", image: "imageA.jpg", contact: "contactA@example.com" },
+    { title: "Product B", description: "Description B", image: "imageB.jpg", contact: "contactB@example.com" },
+    // Add more advertisements as needed
+  ];
+
+  // Function to create and render advertisement cards
+  function renderAdvertisements(filterText = "") {
+    const container = document.getElementById("advertisementsContainer");
+    container.innerHTML = ""; // Clear previous content
+
+    advertisements
+      .filter(ad => ad.title.toLowerCase().includes(filterText.toLowerCase()))
+      .forEach(ad => {
+        const card = document.createElement("div");
+        card.classList.add("card", "col-md-4");
+
+        const image = document.createElement("img");
+        image.src = ad.image;
+        image.alt = ad.title;
+        image.classList.add("card-img-top");
+
+        const cardBody = document.createElement("div");
+        cardBody.classList.add("card-body");
+
+        const title = document.createElement("h5");
+        title.classList.add("card-title");
+        title.textContent = ad.title;
+
+        const description = document.createElement("p");
+        description.classList.add("card-text");
+        description.textContent = ad.description;
+
+        const contact = document.createElement("p");
+        contact.classList.add("card-text");
+        contact.textContent = "Contact: ***";
+
+        cardBody.appendChild(title);
+        cardBody.appendChild(description);
+        cardBody.appendChild(contact);
+
+        card.appendChild(image);
+        card.appendChild(cardBody);
+
+        container.appendChild(card);
+      });
+  }
+
+  // Function to handle input event on the filter input
+  function handleFilterInput() {
+    const filterInput = document.getElementById("filterInput");
+    renderAdvertisements(filterInput.value);
+  }
+
+  // Initial display
+  renderAdvertisements();
+
+  // Add event listener for the filter input
+  const filterInput = document.getElementById("filterInput");
+  filterInput.addEventListener("input", handleFilterInput);
+</script>
+
+<!-- Bootstrap JS and Popper.js -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+</body>
+</html>
